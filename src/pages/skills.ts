@@ -1,6 +1,5 @@
 import {
   hobbyItems,
-  profile,
   skills,
   softSkills
 } from "../data/portfolio";

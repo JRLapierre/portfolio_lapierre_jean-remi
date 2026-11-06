@@ -1,4 +1,4 @@
-import type { Skill } from "../types";
+import type { Skill, SkillCategory } from "../types";
 
 export function escapeHtml(value: string): string {
   return value
@@ -118,7 +118,7 @@ export function renderSkills(
   options: { showContexts?: boolean } = {}
 ): string {
   const categories = [...new Set(skills.map(skill => skill.category))];
-  const categoryLabels = {
+  const categoryLabels: Partial<Record<SkillCategory, string>> = {
     technical: "Compétences techniques",
     soft: "Compétences humaines"
   };

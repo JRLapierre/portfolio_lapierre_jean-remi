@@ -1,8 +1,6 @@
-import { profile, projects, skills } from "../data/portfolio";
-import { renderSkills, tags } from "../utils/html";
+import { profile } from "../data/portfolio";
 
 export function renderHome(): string {
-  const featured = projects.slice(0, 2);
   return `
     <section class="hero">
       <div class="hero-copy">
