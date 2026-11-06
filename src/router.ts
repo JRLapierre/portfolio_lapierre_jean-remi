@@ -1,9 +1,9 @@
 import { navigation } from "./components/navigation";
 import { footer } from "./components/footer";
 import { renderHome } from "./pages/home";
-import { renderCv } from "./pages/cv";
 import { renderProjects } from "./pages/projects";
-import { renderAbout } from "./pages/about";
+import { renderCourses } from "./pages/courses";
+import { renderSkillsPage } from "./pages/skills";
 import { renderContact } from "./pages/contact";
 
 type Page = {
@@ -13,9 +13,9 @@ type Page = {
 
 const routes: Record<string, Page> = {
   "/": { title: "Accueil", render: renderHome },
-  "/cv": { title: "CV", render: renderCv },
   "/projects": { title: "Projets", render: renderProjects },
-  "/about": { title: "À propos", render: renderAbout },
+  "/courses": { title: "Formations", render: renderCourses },
+  "/skills": { title: "Compétences", render: renderSkillsPage },
   "/contact": { title: "Contact", render: renderContact }
 };
 
@@ -61,9 +61,19 @@ export function renderApp(app: HTMLElement): void {
       const destination = link.getAttribute("href");
       if (!destination) return;
 
-      window.history.pushState({}, "", destination);
+      const destinationUrl = new URL(destination, window.location.href);
+      if (destinationUrl.origin !== window.location.origin) return;
+
+      window.history.pushState({}, "", destinationUrl);
       renderApp(app);
-      window.scrollTo({ top: 0, behavior: "instant" });
+      if (!destinationUrl.hash) {
+        window.scrollTo({ top: 0, behavior: "instant" });
+      }
     });
   });
+
+  if (window.location.hash) {
+    const targetId = decodeURIComponent(window.location.hash.slice(1));
+    document.getElementById(targetId)?.scrollIntoView();
+  }
 }

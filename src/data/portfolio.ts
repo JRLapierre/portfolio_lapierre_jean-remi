@@ -1,4 +1,4 @@
-import type { Experience, Project, Skill } from "../types";
+import type { Course, Experience, Project, Skill, SkillContext, SkillContextType } from "../types";
 
 export const profile = {
   name: "Jean-Rémi Lapierre",
@@ -14,7 +14,7 @@ export const profile = {
   photo: "/images/photo.png"
 };
 
-export const skills: Skill[] = [
+const skillDefinitions: Omit<Skill, "contexts">[] = [
   // =====================================
   // BACK-END
   // =====================================
@@ -22,57 +22,37 @@ export const skills: Skill[] = [
   {
     name: "PHP",
     category: "Back-end",
-    level: "practiced",
-    icon: "/images/icons/languages/back/php.png",
-    contexts: [
-      "Stage L3 — Prestarocket",
-      "Stage BUT 2 — Mairie de Montigny-en-Gohelle",
-      "Site avancer-avec.fr"
-    ]
+    icon: "/images/icons/languages/back/php.png"
   },
   {
     name: "Java",
     category: "Back-end",
-    level: "practiced",
-    icon: "/images/icons/languages/back/java.png",
-    contexts: [
-      "Stage BUT 3 — Elosi",
-      "Projet Evolution2",
-      "Projet Evolution1"
-    ]
+    icon: "/images/icons/languages/back/java.png"
   },
   {
     name: "Python",
     category: "Back-end",
-    level: "practiced",
     icon: "/images/icons/languages/back/python.png"
   },
   {
     name: "Laravel",
     category: "Back-end",
-    level: "practiced",
     icon: "/images/icons/framework/laravel.png"
   },
   {
     name: "Symfony",
     category: "Back-end",
-    level: "practiced",
-    icon: "/images/icons/framework/symfony.png",
-    contexts: ["Stage L3 — Prestarocket"]
+    icon: "/images/icons/framework/symfony.png"
   },
   {
     name: "Spring",
     category: "Back-end",
-    level: "practiced",
-    icon: "/images/icons/framework/spring.png",
-    contexts: ["Stage BUT 3 — Elosi"]
+    icon: "/images/icons/framework/spring.png"
   },
   {
     name: "GraphQL",
     category: "Back-end",
-    level: "practiced",
-    icon: "/images/icons/languages/back/graphql.png",
-    contexts: ["Stage L3 — Prestarocket"]
+    icon: "/images/icons/languages/back/graphql.png"
   },
 
   // =====================================
@@ -82,57 +62,37 @@ export const skills: Skill[] = [
   {
     name: "HTML",
     category: "Front-end",
-    level: "practiced",
-    icon: "/images/icons/languages/front/html.png",
-    contexts: [
-      "Stage BUT 3 — Elosi",
-      "Stage BUT 2 — Mairie de Montigny-en-Gohelle"
-    ]
+    icon: "/images/icons/languages/front/html.png"
   },
   {
     name: "CSS",
     category: "Front-end",
-    level: "practiced",
     icon: "/images/icons/languages/front/css.png"
   },
   {
     name: "JavaScript",
     category: "Front-end",
-    level: "practiced",
-    icon: "/images/icons/languages/front/js.png",
-    contexts: [
-      "Stage L3 — Prestarocket",
-      "Stage BUT 3 — Elosi",
-      "Stage BUT 2 — Mairie de Montigny-en-Gohelle",
-      "Site avancer-avec.fr"
-    ]
+    icon: "/images/icons/languages/front/js.png"
   },
   {
     name: "TypeScript",
     category: "Front-end",
-    level: "practiced",
     icon: "/images/icons/languages/front/ts.png"
   },
   {
     name: "Bootstrap",
     category: "Front-end",
-    level: "practiced",
-    icon: "/images/icons/framework/bootstrap.png",
-    contexts: ["Stage L3 — Prestarocket"]
+    icon: "/images/icons/framework/bootstrap.png"
   },
   {
     name: "React",
     category: "Front-end",
-    level: "practiced",
-    icon: "/images/icons/framework/react.png",
-    contexts: ["Site avancer-avec.fr"]
+    icon: "/images/icons/framework/react.png"
   },
   {
     name: "Vue.js",
     category: "Front-end",
-    level: "practiced",
-    icon: "/images/icons/framework/vue.png",
-    contexts: ["Stage BUT 3 — Elosi"]
+    icon: "/images/icons/framework/vue.png"
   },
 
   // =====================================
@@ -142,21 +102,17 @@ export const skills: Skill[] = [
   {
     name: "Git",
     category: "DevOps",
-    level: "practiced",
     icon: "/images/icons/tools/git.png"
   },
   {
     name: "Bash",
     category: "DevOps",
-    level: "practiced",
     icon: "/images/icons/languages/back/bash.png"
   },
   {
     name: "Docker",
     category: "DevOps",
-    level: "practiced",
-    icon: "/images/icons/tools/docker.png",
-    contexts: ["Stage L3 — Prestarocket"]
+    icon: "/images/icons/tools/docker.png"
   },
 
   // =====================================
@@ -166,18 +122,11 @@ export const skills: Skill[] = [
   {
     name: "SQL",
     category: "Bases de données",
-    level: "practiced",
-    icon: "/images/icons/db/sql.png",
-    contexts: [
-      "Stage BUT 3 — Elosi",
-      "Stage BUT 2 — Mairie de Montigny-en-Gohelle",
-      "Site avancer-avec.fr"
-    ]
+    icon: "/images/icons/db/sql.png"
   },
   {
     name: "MongoDB",
     category: "Bases de données",
-    level: "practiced",
     icon: "/images/icons/db/mongodb.png"
   },
 
@@ -188,16 +137,12 @@ export const skills: Skill[] = [
   {
     name: "PrestaShop",
     category: "CMS",
-    level: "practiced",
-    icon: "/images/icons/framework/prestashop.png",
-    contexts: ["Stage L3 — Prestarocket"]
+    icon: "/images/icons/framework/prestashop.png"
   },
   {
     name: "Shopify",
     category: "CMS",
-    level: "practiced",
-    icon: "/images/icons/framework/shopify.png",
-    contexts: ["Stage L3 — Prestarocket"]
+    icon: "/images/icons/framework/shopify.png"
   },
 
   // =====================================
@@ -207,32 +152,13 @@ export const skills: Skill[] = [
   {
     name: "DBeaver",
     category: "Outils",
-    level: "practiced",
-    icon: "/images/icons/tools/dbeaver.png",
-    contexts: ["Stage BUT 3 — Elosi"]
+    icon: "/images/icons/tools/dbeaver.png"
   },
   {
     name: "WampServer",
     category: "Outils",
-    level: "practiced",
-    icon: "/images/icons/tools/wampserver.png",
-    contexts: ["Stage BUT 2 — Mairie de Montigny-en-Gohelle"]
+    icon: "/images/icons/tools/wampserver.png"
   }
-
-  // =====================================
-  // COMPÉTENCES ÉTUDIÉES
-  // =====================================
-  //
-  // TODO Ajoute ici les technologies vues uniquement en cours.
-  //
-  // Exemple :
-  //
-  // {
-  //   name: "Technologie",
-  //   category: "Back-end",
-  //   level: "studied",
-  //   icon: "/images/icons/languages/back/technologie.png"
-  // }
 ];
 
 export const softSkills = ["👥 Esprit d’équipe", "🎨 Créativité", "🔎 Esprit critique"];
@@ -368,3 +294,81 @@ export const projects: Project[] = [
     }
   }
 ];
+
+export const courses: Course[] = [
+  { title: "BUT informatique", semester: "S1", date: "TODO", description: ["TODO"], technologies: ["Python"] },
+  { title: "BUT informatique", semester: "S2", date: "TODO", description: ["TODO"], technologies: ["Python"] },
+  { title: "BUT informatique", semester: "S3", date: "TODO", description: ["TODO"], technologies: ["Python"] },
+  { title: "BUT informatique", semester: "S4", date: "TODO", description: ["TODO"], technologies: ["Python"] },
+  { title: "BUT informatique", semester: "S5", date: "TODO", description: ["TODO"], technologies: ["Python"] },
+  { title: "BUT informatique", semester: "S6", date: "TODO", description: ["TODO"], technologies: ["Python"] },
+  { title: "L3 informatique", semester: "S1", date: "TODO", description: ["TODO"], technologies: ["Python"] },
+  { title: "L3 informatique", semester: "S2", date: "TODO", description: ["TODO"], technologies: ["Python"] },
+  { title: "M1 informatique", semester: "S1", date: "TODO", description: ["TODO"], technologies: ["Python"] }
+];
+
+export const academicProjects: Project[] = [
+  { title: "Projet académique 1", date: "TODO", description: ["TODO"], technologies: ["TODO"] },
+  { title: "Projet académique 2", date: "TODO", description: ["TODO"], technologies: ["TODO"] },
+  { title: "Projet académique 3", date: "TODO", description: ["TODO"], technologies: ["TODO"] }
+];
+
+export const competitions: Project[] = [
+  { 
+    title: "Préparation au SWERC", 
+    date: "Septembre - Décembre 2026", 
+    description: [
+      "Entrainements algorithmiques en vue du SWERC", 
+      "Le swerc est une compétition internationale de programmation par équipe, organisée cette année à Lyon. Le but est de résoudre le plus de problèmes algorithmiques en un temps limité.",
+      "Pour s'entrainer à cette compétion, des séances d'entrainement sont organisés le Jeudi après-midi."
+    ], 
+    technologies: ["Python"] 
+  }
+];
+
+type SkillContextSource = {
+  type: SkillContextType;
+  label: string;
+  technologies: string[];
+};
+
+const skillContextSources: SkillContextSource[] = [
+  ...internships.map(item => ({
+    type: "professional" as const,
+    label: item.title,
+    technologies: item.technologies
+  })),
+  ...projects.map(item => ({
+    type: "personal" as const,
+    label: item.title,
+    technologies: item.technologies
+  })),
+  ...academicProjects.map(item => ({
+    type: "academic_project" as const,
+    label: item.title,
+    technologies: item.technologies
+  })),
+  ...courses.map(item => ({
+    type: "course" as const,
+    label: `${item.title} ${item.semester}`,
+    technologies: item.technologies
+  })),
+  ...competitions.map(item => ({
+    type: "competition" as const,
+    label: item.title,
+    technologies: item.technologies
+  }))
+];
+
+function generateSkillContexts(skillName: string): SkillContext[] {
+  return skillContextSources
+    .filter(source => source.technologies.some(
+      technology => technology.toLowerCase() === skillName.toLowerCase()
+    ))
+    .map(({ type, label }) => ({ type, label }));
+}
+
+export const skills: Skill[] = skillDefinitions.map(skill => ({
+  ...skill,
+  contexts: generateSkillContexts(skill.name)
+}));

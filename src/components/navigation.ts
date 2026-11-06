@@ -1,8 +1,8 @@
 const links = [
   { path: "/", label: "Accueil" },
-  { path: "/cv", label: "CV" },
   { path: "/projects", label: "Projets" },
-  { path: "/about", label: "À propos" },
+  { path: "/courses", label: "Formations" },
+  { path: "/skills", label: "Compétences" },
   { path: "/contact", label: "Contact" }
 ];
 

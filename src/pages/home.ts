@@ -12,7 +12,7 @@ export function renderHome(): string {
         <p class="lead">J'ai créé ce portfolio pour mettre tout ce que je ne pouvais pas mettre dans le CV, et parler de moi en détails.</p>
         <div class="hero-actions">
           <a class="button button-primary" href="/projects" data-link>Voir mes projets</a>
-          <a class="button button-secondary" href="/cv" data-link>Consulter mon CV</a>
+          <a class="button button-secondary" href="https://jrlapierre.github.io/CV/" target="_blank">Consulter mon CV</a>
         </div>
       </div>
       <div class="hero-portrait" aria-label="Portrait de Jean-Rémi Lapierre">
@@ -22,32 +22,44 @@ export function renderHome(): string {
       </div>
     </section>
 
-    <section class="section-block">
-      <div class="section-heading">
-        <div><p class="eyebrow">SÉLECTION</p><h2>Projets récents</h2></div>
-        <a class="text-link" href="/projects" data-link>Tout voir ↗</a>
-      </div>
-      <div class="card-grid">
-        ${featured.map((project) => `
-          <article class="content-card">
-            <p class="card-date">${project.date}</p>
-            <h3>${project.title}</h3>
-            <p>${project.description[0]}</p>
-            ${tags(project.technologies)}
-            ${project.link ? `<a class="text-link" href="${project.link.url}" target="_blank" rel="noreferrer">Voir le code ↗</a>` : ""}
-          </article>
-        `).join("")}
-      </div>
-    </section>
+    <div class="page-intro">
+      <p class="eyebrow">PROFIL</p>
 
-    <section class="section-block soft-panel">
-      <div class="section-heading">
-        <div><p class="eyebrow">ENVIRONNEMENT TECHNIQUE</p><h2>Compétences</h2></div>
-        <a class="text-link" href="/about" data-link>En savoir plus ↗</a>
-      </div>
-      <div class="skill-overview">
-        ${renderSkills(skills, { showContexts: false })}
-      </div>
+      <h2>À propos</h2>
+
+      <p class="lead">
+        Développeur full stack, avec une formation en informatique
+        et des expériences en développement d'applications web.
+      </p>
+    </div>
+
+    <section class="about-grid">
+      <article class="content-card about-main">
+        <h2>Mon profil</h2>
+
+        <p>
+          Je suis ${profile.name},
+          ${profile.role.toLowerCase()}.
+          Mon parcours m'a permis de travailler sur des applications web,
+          des outils internes et des projets e-commerce,
+          en autonomie comme en équipe.
+        </p>
+
+        <p>
+          J'interviens sur les différentes couches d'une application :
+          interfaces, logique métier, API et bases de données.
+        </p>
+      </article>
+
+      <article class="content-card">
+        <h2>Informations</h2>
+
+        <ul class="contact-list">
+          <li>${profile.location}</li>
+          <li>${profile.languages.join(" · ")}</li>
+          <li>${profile.drivingLicence}</li>
+        </ul>
+      </article>
     </section>
   `;
 }
