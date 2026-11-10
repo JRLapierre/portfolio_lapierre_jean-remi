@@ -1,5 +1,27 @@
-import { courses, education, skills } from "../data/portfolio";
-import { bullets, skillTags, slugify } from "../utils/html";
+import { academicProjects, courses, education, skills } from "../data/portfolio";
+import { escapeHtml, skillTags, slugify } from "../utils/html";
+import type { CourseProject } from "../types";
+
+function renderCourseProjects(courseProjects: CourseProject[]): string {
+  return `
+    <ul class="detail-list">
+      ${courseProjects.map(courseProject => {
+        const academicProject = courseProject.academicProjectTitle
+          ? academicProjects.find(project => project.title === courseProject.academicProjectTitle)
+          : undefined;
+        const label = academicProject?.title ?? courseProject.title;
+
+        return `
+          <li>
+            ${academicProject
+              ? `<a href="/projects#${slugify(academicProject.title)}" data-link>${escapeHtml(label)}</a>`
+              : escapeHtml(label)}
+          </li>
+        `;
+      }).join("")}
+    </ul>
+  `;
+}
 
 const educationTitleByCourseTitle: Record<string, string> = {
   "BUT informatique": "BUT informatique",
@@ -35,7 +57,7 @@ export function renderCourses(): string {
               <article class="project-card" id="${slugify(`${course.title} ${course.semester}`)}">
                 <div class="project-content">
                   <div class="timeline-title"><h3>${course.semester}</h3><span>${course.date}</span></div>
-                  ${bullets(course.description)}
+                  ${renderCourseProjects(course.projects)}
                   ${skillTags(course.technologies, skills)}
                 </div>
               </article>

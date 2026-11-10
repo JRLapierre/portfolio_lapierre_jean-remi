@@ -1,12 +1,11 @@
 export type SkillCategory =
-  | "technical"
-  | "soft"
-  | "Back-end"
-  | "Front-end"
-  | "DevOps"
-  | "Bases de données"
-  | "CMS"
-  | "Outils";
+  | "Langages"
+  | "Développement web"
+  | "Frameworks & bibliothèques"
+  | "Bases de données & Data"
+  | "API & architecture"
+  | "Outils & DevOps"
+  | "CMS & e-commerce";
 
 export type SkillContextType =
   | "professional"
@@ -55,6 +54,11 @@ export interface Course {
   title: string;
   semester: string;
   date: string;
-  description: string[];
+  projects: CourseProject[];
   technologies: string[];
+}
+
+export interface CourseProject {
+  title: string;
+  academicProjectTitle?: string;
 }

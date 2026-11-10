@@ -15,149 +15,192 @@ export const profile = {
 };
 
 const skillDefinitions: Omit<Skill, "contexts">[] = [
-  // =====================================
-  // BACK-END
-  // =====================================
-
+  // Langages
   {
     name: "PHP",
-    category: "Back-end",
-    icon: "/images/icons/languages/back/php.png"
+    category: "Langages",
+    icon: "/images/icons/skills/languages/php.png"
   },
   {
     name: "Java",
-    category: "Back-end",
-    icon: "/images/icons/languages/back/java.png"
+    category: "Langages",
+    icon: "/images/icons/skills/languages/java.png"
+  },
+  {
+    name: "C",
+    category: "Langages",
+    icon: "/images/icons/skills/languages/c.webp"
+  },
+  {
+    name: "Kotlin",
+    category: "Langages",
+    icon: "/images/icons/skills/languages/kotlin.png"
   },
   {
     name: "Python",
-    category: "Back-end",
-    icon: "/images/icons/languages/back/python.png"
+    category: "Langages",
+    icon: "/images/icons/skills/languages/python.png"
   },
   {
-    name: "Laravel",
-    category: "Back-end",
-    icon: "/images/icons/framework/laravel.png"
+    name: "Haskell",
+    category: "Langages",
+    icon: "/images/icons/skills/languages/haskell.png"
   },
   {
-    name: "Symfony",
-    category: "Back-end",
-    icon: "/images/icons/framework/symfony.png"
+    name: "Rust",
+    category: "Langages",
+    icon: "/images/icons/skills/languages/rust.svg"
   },
   {
-    name: "Spring",
-    category: "Back-end",
-    icon: "/images/icons/framework/spring.png"
-  },
-  {
-    name: "GraphQL",
-    category: "Back-end",
-    icon: "/images/icons/languages/back/graphql.png"
-  },
-
-  // =====================================
-  // FRONT-END
-  // =====================================
-
-  {
-    name: "HTML",
-    category: "Front-end",
-    icon: "/images/icons/languages/front/html.png"
-  },
-  {
-    name: "CSS",
-    category: "Front-end",
-    icon: "/images/icons/languages/front/css.png"
+    name: "Assembleur",
+    category: "Langages",
+    icon: "/images/icons/skills/languages/assembly.png"
   },
   {
     name: "JavaScript",
-    category: "Front-end",
-    icon: "/images/icons/languages/front/js.png"
+    category: "Langages",
+    icon: "/images/icons/skills/languages/javascript.png"
   },
   {
     name: "TypeScript",
-    category: "Front-end",
-    icon: "/images/icons/languages/front/ts.png"
-  },
-  {
-    name: "Bootstrap",
-    category: "Front-end",
-    icon: "/images/icons/framework/bootstrap.png"
-  },
-  {
-    name: "React",
-    category: "Front-end",
-    icon: "/images/icons/framework/react.png"
-  },
-  {
-    name: "Vue.js",
-    category: "Front-end",
-    icon: "/images/icons/framework/vue.png"
-  },
-
-  // =====================================
-  // DEVOPS
-  // =====================================
-
-  {
-    name: "Git",
-    category: "DevOps",
-    icon: "/images/icons/tools/git.png"
+    category: "Langages",
+    icon: "/images/icons/skills/languages/typescript.png"
   },
   {
     name: "Bash",
-    category: "DevOps",
-    icon: "/images/icons/languages/back/bash.png"
+    category: "Langages",
+    icon: "/images/icons/skills/languages/bash.png"
+  },
+
+  // Développement web
+  {
+    name: "HTML",
+    category: "Développement web",
+    icon: "/images/icons/skills/web-development/html.png"
   },
   {
-    name: "Docker",
-    category: "DevOps",
-    icon: "/images/icons/tools/docker.png"
+    name: "XML",
+    category: "Développement web",
+    icon: "/images/icons/skills/web-development/xml.svg"
+  },
+  {
+    name: "CSS",
+    category: "Développement web",
+    icon: "/images/icons/skills/web-development/css.png"
   },
 
-  // =====================================
-  // BASES DE DONNÉES
-  // =====================================
+  // Frameworks & bibliothèques
+  {
+    name: "Laravel",
+    category: "Frameworks & bibliothèques",
+    icon: "/images/icons/skills/frameworks-libraries/laravel.png"
+  },
+  {
+    name: "Symfony",
+    category: "Frameworks & bibliothèques",
+    icon: "/images/icons/skills/frameworks-libraries/symfony.png"
+  },
+  {
+    name: "Spring",
+    category: "Frameworks & bibliothèques",
+    icon: "/images/icons/skills/frameworks-libraries/spring.png"
+  },
+  {
+    name: "React",
+    category: "Frameworks & bibliothèques",
+    icon: "/images/icons/skills/frameworks-libraries/react.png"
+  },
+  {
+    name: "Next.js",
+    category: "Frameworks & bibliothèques",
+    icon: "/images/icons/skills/frameworks-libraries/nextjs.png"
+  },
+  {
+    name: "Vue.js",
+    category: "Frameworks & bibliothèques",
+    icon: "/images/icons/skills/frameworks-libraries/vue.png"
+  },
+  {
+    name: "Bootstrap",
+    category: "Frameworks & bibliothèques",
+    icon: "/images/icons/skills/frameworks-libraries/bootstrap.png"
+  },
+  {
+    name: "SDL3",
+    category: "Frameworks & bibliothèques",
+    icon: "/images/icons/skills/frameworks-libraries/sdl3.webp"
+  },
 
+  // Bases de données & Data
   {
     name: "SQL",
-    category: "Bases de données",
-    icon: "/images/icons/db/sql.png"
+    category: "Bases de données & Data",
+    icon: "/images/icons/skills/data/sql.png"
   },
   {
     name: "MongoDB",
-    category: "Bases de données",
-    icon: "/images/icons/db/mongodb.png"
-  },
-
-  // =====================================
-  // CMS
-  // =====================================
-
-  {
-    name: "PrestaShop",
-    category: "CMS",
-    icon: "/images/icons/framework/prestashop.png"
+    category: "Bases de données & Data",
+    icon: "/images/icons/skills/data/mongodb.png"
   },
   {
-    name: "Shopify",
-    category: "CMS",
-    icon: "/images/icons/framework/shopify.png"
+    name: "Apache Spark",
+    category: "Bases de données & Data",
+    icon: "/images/icons/skills/data/apache-spark.png"
+  },
+  {
+    name: "Neo4j",
+    category: "Bases de données & Data",
+    icon: "/images/icons/skills/data/neo4j.svg"
+  },
+  {
+    name: "Cassandra",
+    category: "Bases de données & Data",
+    icon: "/images/icons/skills/data/cassandra.svg"
   },
 
-  // =====================================
-  // OUTILS
-  // =====================================
+  // API & architecture
+  {
+    name: "GraphQL",
+    category: "API & architecture",
+    icon: "/images/icons/skills/api-architecture/graphql.png"
+  },
 
+  // Outils & DevOps
+  {
+    name: "Git",
+    category: "Outils & DevOps",
+    icon: "/images/icons/skills/tools-devops/git.png"
+  },
+  {
+    name: "Docker",
+    category: "Outils & DevOps",
+    icon: "/images/icons/skills/tools-devops/docker.png"
+  },
   {
     name: "DBeaver",
-    category: "Outils",
-    icon: "/images/icons/tools/dbeaver.png"
+    category: "Outils & DevOps",
+    icon: "/images/icons/skills/tools-devops/dbeaver.png"
   },
   {
     name: "WampServer",
-    category: "Outils",
-    icon: "/images/icons/tools/wampserver.png"
+    category: "Outils & DevOps",
+    icon: "/images/icons/skills/tools-devops/wampserver.png"
+  },
+  {
+    name: "Flex",
+    category: "Outils & DevOps"
+  },
+
+  // CMS & e-commerce
+  {
+    name: "PrestaShop",
+    category: "CMS & e-commerce",
+    icon: "/images/icons/skills/cms-ecommerce/prestashop.png"
+  },
+  {
+    name: "Shopify",
+    category: "CMS & e-commerce",
+    icon: "/images/icons/skills/cms-ecommerce/shopify.png"
   }
 ];
 
@@ -296,21 +339,90 @@ export const projects: Project[] = [
 ];
 
 export const courses: Course[] = [
-  { title: "BUT informatique", semester: "S1", date: "TODO", description: ["TODO"], technologies: ["Python"] },
-  { title: "BUT informatique", semester: "S2", date: "TODO", description: ["TODO"], technologies: ["Python"] },
-  { title: "BUT informatique", semester: "S3", date: "TODO", description: ["TODO"], technologies: ["Python"] },
-  { title: "BUT informatique", semester: "S4", date: "TODO", description: ["TODO"], technologies: ["Python"] },
-  { title: "BUT informatique", semester: "S5", date: "TODO", description: ["TODO"], technologies: ["Python"] },
-  { title: "BUT informatique", semester: "S6", date: "TODO", description: ["TODO"], technologies: ["Python"] },
-  { title: "L3 informatique", semester: "S1", date: "TODO", description: ["TODO"], technologies: ["Python"] },
-  { title: "L3 informatique", semester: "S2", date: "TODO", description: ["TODO"], technologies: ["Python"] },
-  { title: "M1 informatique", semester: "S1", date: "TODO", description: ["TODO"], technologies: ["Python"] }
+  {
+    title: "BUT informatique",
+    semester: "S1",
+    date: "Septembre – Décembre 2021",
+    projects: [
+      { title: "Exercice de programmation sans fiche associée" },
+      {
+        title: "Projet test — Gestion de bibliothèque",
+        academicProjectTitle: "Projet test — Gestion de bibliothèque"
+      }
+    ],
+    technologies: ["Java", "Python", "HTML", "CSS", "SQL", "Bash"]
+  },
+  {
+    title: "BUT informatique",
+    semester: "S2",
+    date: "Janvier – Juin 2022",
+    projects: [{ title: "TODO" }],
+    technologies: ["Java", "Python", "HTML", "CSS", "JavaScript", "SQL", "Bash", "Git"]
+  },
+  {
+    title: "BUT informatique",
+    semester: "S3",
+    date: "Septembre – Décembre 2022",
+    projects: [{ title: "TODO" }],
+    technologies: ["Java", "Python", "PHP", "Laravel", "HTML", "CSS", "JavaScript", "SQL", "Bash", "Git"]
+  },
+  {
+    title: "BUT informatique",
+    semester: "S4",
+    date: "Janvier – Avril 2023",
+    projects: [{ title: "TODO" }],
+    technologies: ["Java", "Python", "HTML", "Kotlin", "XML", "Git", "Apache Spark", "Neo4j", "Cassandra", "MongoDB"]
+  },
+  {
+    title: "BUT informatique",
+    semester: "S5",
+    date: "Septembre – Décembre 2023",
+    projects: [{ title: "TODO" }],
+    technologies: ["Java", "Python", "JavaScript", "TypeScript", "HTML", "CSS", "SQL", "MongoDB", "React", "Next.js", "Spring", "Git"]
+  },
+  {
+    title: "BUT informatique",
+    semester: "S6",
+    date: "Janvier – Mars 2024",
+    projects: [{ title: "TODO" }],
+    technologies: ["PHP", "Java", "Python", "JavaScript", "TypeScript", "HTML", "CSS", "React", "Next.js", "Symfony", "Git"]
+  },
+  {
+    title: "L3 informatique",
+    semester: "S1",
+    date: "Septembre – Décembre 2025",
+    projects: [{ title: "TODO" }],
+    technologies: ["C", "SDL3", "PHP", "HTML", "CSS", "JavaScript", "Bash", "Flex", "Git"]
+  },
+  {
+    title: "L3 informatique",
+    semester: "S2",
+    date: "Janvier – Mars 2026",
+    projects: [{ title: "TODO" }],
+    technologies: ["Java", "Python", "Haskell", "PHP", "HTML", "CSS", "JavaScript", "SQL", "Rust", "C", "Assembleur", "Git"]
+  },
+  {
+    title: "M1 informatique",
+    semester: "S1",
+    date: "Septembre – Décembre 2026",
+    projects: [{ title: "TODO" }],
+    technologies: ["Python", "Java", "C", "Git"]
+  }
 ];
 
 export const academicProjects: Project[] = [
   { title: "Projet académique 1", date: "TODO", description: ["TODO"], technologies: ["TODO"] },
   { title: "Projet académique 2", date: "TODO", description: ["TODO"], technologies: ["TODO"] },
-  { title: "Projet académique 3", date: "TODO", description: ["TODO"], technologies: ["TODO"] }
+  { title: "Projet académique 3", date: "TODO", description: ["TODO"], technologies: ["TODO"] },
+  {
+    title: "Projet test — Gestion de bibliothèque",
+    date: "BUT informatique — S1",
+    description: [
+      "Application fictive de gestion d'un catalogue et des emprunts.",
+      "Projet de démonstration pour tester le lien depuis la formation."
+    ],
+    technologies: ["Python"]
+  }
 ];
 
 export const competitions: Project[] = [
