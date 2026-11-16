@@ -3,6 +3,7 @@ import { footer } from "./components/footer";
 import { renderHome } from "./pages/home";
 import { renderProjects } from "./pages/projects";
 import { renderCourses } from "./pages/courses";
+import { renderHobbies } from "./pages/hobbies";
 import { renderSkillsPage } from "./pages/skills";
 import { renderContact } from "./pages/contact";
 
@@ -15,6 +16,7 @@ const routes: Record<string, Page> = {
   "/": { title: "Accueil", render: renderHome },
   "/projects": { title: "Projets", render: renderProjects },
   "/courses": { title: "Formations", render: renderCourses },
+  "/hobbies": { title: "Loisirs", render: renderHobbies },
   "/skills": { title: "Compétences", render: renderSkillsPage },
   "/contact": { title: "Contact", render: renderContact }
 };

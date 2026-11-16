@@ -1,13 +1,11 @@
 import {
-  hobbyItems,
   skills,
   softSkills
 } from "../data/portfolio";
 
 import {
   tags,
-  renderSkills,
-  renderIconItems
+  renderSkills
 } from "../utils/html";
 
 export function renderSkillsPage(): string {
@@ -32,9 +30,7 @@ export function renderSkillsPage(): string {
 
       ${tags(softSkills)}
 
-      <h2 class="subheading">Loisirs</h2>
-
-      ${renderIconItems(hobbyItems)}
+      <a class="text-link" href="/hobbies" data-link>Découvrir mes loisirs</a>
     </section>
   `;
 }

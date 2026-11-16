@@ -3,6 +3,7 @@ const links = [
   { path: "/projects", label: "Projets" },
   { path: "/courses", label: "Formations" },
   { path: "/skills", label: "Compétences" },
+  { path: "/hobbies", label: "Loisirs" },
   { path: "/contact", label: "Contact" }
 ];
 

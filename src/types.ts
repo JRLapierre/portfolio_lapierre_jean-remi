@@ -28,6 +28,17 @@ export interface Skill {
   contexts: SkillContext[];
 }
 
+export type HobbyContentBlock =
+  | { type: "text"; text: string }
+  | { type: "link"; label: string; url: string }
+  | { type: "image"; src: string; alt: string; caption?: string };
+
+export interface HobbyItem {
+  label: string;
+  icon: string;
+  content: HobbyContentBlock[];
+}
+
 export interface Experience {
   title: string;
   date: string;

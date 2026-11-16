@@ -97,6 +97,21 @@ p { line-height: 1.7; }
 .project-difficulty { margin: 16px 0; padding-top: 13px; border-top: 1px solid var(--line); }
 .project-difficulty p { margin: 0; color: var(--muted); }
 .course-project-description { margin: 4px 0 0; color: var(--muted); }
+.hobby-grid { display: flex; flex-direction: column; gap: 14px; padding-bottom: 54px; }
+.hobby-card { border: 1px solid var(--line); border-radius: 16px; background: white; overflow: hidden; }
+.hobby-card summary { display: flex; align-items: center; gap: 13px; padding: 18px 20px; cursor: pointer; list-style: none; }
+.hobby-card summary::-webkit-details-marker { display: none; }
+.hobby-card summary:focus-visible { outline: 2px solid var(--green-strong); outline-offset: -3px; }
+.hobby-icon { width: 42px; height: 42px; object-fit: contain; }
+.hobby-title { flex: 1; font: 700 1rem Manrope, sans-serif; }
+.hobby-toggle { color: #526d24; font-size: .82rem; font-weight: 700; }
+.hobby-toggle-close, .hobby-card[open] .hobby-toggle-open { display: none; }
+.hobby-card[open] .hobby-toggle-close { display: inline; }
+.hobby-content { padding: 0 20px 20px; }
+.hobby-content p { margin: 12px 0; color: var(--muted); }
+.hobby-content figure { margin: 14px 0 0; }
+.hobby-content img { display: block; max-width: 100%; max-height: 260px; object-fit: contain; border-radius: 12px; }
+.hobby-content figcaption { margin-top: 7px; color: var(--muted); font-size: .82rem; }
 .about-grid { display: grid; grid-template-columns: 1.5fr 1fr; gap: 18px; }
 .about-main p { color: var(--muted); }
 .subheading { margin-top: 35px; }

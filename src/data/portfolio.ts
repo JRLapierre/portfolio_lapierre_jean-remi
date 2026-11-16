@@ -1,4 +1,4 @@
-import type { Course, Experience, Project, Skill, SkillContext, SkillContextType } from "../types";
+import type { Course, Experience, HobbyItem, Project, Skill, SkillContext, SkillContextType } from "../types";
 
 export const profile = {
   name: "Jean-Rémi Lapierre",
@@ -206,40 +206,82 @@ const skillDefinitions: Omit<Skill, "contexts">[] = [
 
 export const softSkills = ["👥 Esprit d’équipe", "🎨 Créativité", "🔎 Esprit critique"];
 
-export const hobbies = [
-  "Vélo",
-  "Marche",
-  "Musique",
-  "Lecture",
-  "Écriture",
-  "Programmation"
-];
-
-export const hobbyItems = [
+export const hobbyItems: HobbyItem[] = [
   {
     label: "Vélo",
-    icon: "/images/icons/hobbies/bike.png"
+    icon: "/images/icons/hobbies/bike.png",
+    content: [
+      { type: "text", text: "Exemple à remplacer : présente ici tes sorties, itinéraires ou souvenirs à vélo." },
+      { type: "link", label: "Lien de démonstration", url: "https://example.com" },
+      {
+        type: "image",
+        src: "/images/icons/hobbies/bike.png",
+        alt: "Illustration de démonstration pour le vélo",
+        caption: "Image de démonstration à remplacer."
+      }
+    ]
   },
   {
     label: "Marche",
-    icon: "/images/icons/hobbies/walk.png"
+    icon: "/images/icons/hobbies/walk.png",
+    content: [
+      { type: "text", text: "Exemple à remplacer : raconte ici les promenades ou les paysages que tu apprécies." }
+    ]
   },
   {
     label: "Musique",
-    icon: "/images/icons/hobbies/music.png"
+    icon: "/images/icons/hobbies/music.png",
+    content: [
+      { type: "text", text: "Exemple à remplacer : parle ici des styles musicaux, artistes ou instruments qui t’intéressent." },
+      { type: "link", label: "Lien de démonstration", url: "https://example.com" }
+    ]
   },
   {
     label: "Lecture",
-    icon: "/images/icons/hobbies/reading.png"
+    icon: "/images/icons/hobbies/reading.png",
+    content: [
+      { type: "text", text: "Exemple à remplacer : présente ici tes lectures ou les genres que tu préfères." },
+      {
+        type: "image",
+        src: "/images/icons/hobbies/reading.png",
+        alt: "Illustration de démonstration pour la lecture"
+      }
+    ]
   },
   {
     label: "Écriture",
-    icon: "/images/icons/hobbies/writing.png"
+    icon: "/images/icons/hobbies/writing.png",
+    content: [
+      { type: "text", text: "Exemple à remplacer : décris ici les textes ou projets d’écriture que tu aimes réaliser." }
+    ]
   },
   {
-    label: "Programmation",
-    icon: "/images/icons/hobbies/programming.png"
-  }
+    label: "Sciences",
+    icon: "/images/icons/hobbies/sciences.png",
+    content: [
+      { type: "text", text: "Exemple à remplacer : partage ici les sujets scientifiques qui éveillent ta curiosité." },
+      { type: "link", label: "Lien de démonstration", url: "https://example.com" },
+      {
+        type: "image",
+        src: "/images/icons/hobbies/sciences.png",
+        alt: "Illustration de démonstration pour les sciences"
+      }
+    ]
+  },
+  {
+    label: "Minecraft",
+    icon: "/images/icons/hobbies/minecraft.png",
+    content: [
+      { type: "text", text: "Exemple à remplacer : présente ici tes constructions, modes de jeu ou projets Minecraft." },
+      {
+        type: "image",
+        src: "/images/icons/hobbies/minecraft.png",
+        alt: "Illustration de démonstration pour Minecraft",
+        caption: "Image de démonstration à remplacer."
+      },
+      { type: "link", label: "Lien de démonstration", url: "https://example.com" }
+    ]
+  },
 ];
 
 export const education = [

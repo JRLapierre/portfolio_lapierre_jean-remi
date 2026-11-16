@@ -8,6 +8,9 @@ J'ai créé ce portfolio pour mettre tout ce que je ne pouvais pas mettre dans l
 
 D'autres mises à jour vont suivre.
 
+- 1.2.0
+Ajout d'une page "Loisirs"
+
 - 1.1.0
 Suppression de la page CV  
 gestion dynamique des expériences dans chaque compétences  
@@ -21,5 +24,12 @@ Adaptation du cv à l'aide de chatgpt.
 
 ## TODO
 
+- Trouver un icon pour le portfolio
 - Ajouter les softskills
 - Ajouter des détails sur les loisirs et ma personnalité
+
+- Que faire pour l'église ?  
+Je m'occupe des taches suivantes relatives à l'ordinateur : 
+- Vidéoprojeter les paroles des chants, versets bibliques, vidéos, et autres contenus occasionnels
+- Enregistrer la prédication, et la publier sur le site de l'église eehb.fr
+- M'assurer que le culte soit bien rediffusé sur Zoom, afin de permettre à ceux qui ne peuvent pas venir d'assister au culte
