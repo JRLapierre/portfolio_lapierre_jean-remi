@@ -94,6 +94,8 @@ p { line-height: 1.7; }
 .project-list { display: flex; flex-direction: column; gap: 14px; }
 .project-card { display: grid; grid-template-columns: 1fr; padding: 26px; border: 1px solid var(--line); border-radius: 18px; background: white; }
 .project-content .detail-list { margin: 12px 0; }
+.project-difficulty { margin: 16px 0; padding-top: 13px; border-top: 1px solid var(--line); }
+.project-difficulty p { margin: 0; color: var(--muted); }
 .course-project-description { margin: 4px 0 0; color: var(--muted); }
 .about-grid { display: grid; grid-template-columns: 1.5fr 1fr; gap: 18px; }
 .about-main p { color: var(--muted); }

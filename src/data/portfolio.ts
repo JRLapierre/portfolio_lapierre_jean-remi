@@ -268,32 +268,36 @@ export const internships: Experience[] = [
     title: "Stage L3 — Prestarocket",
     date: "23 mars – 24 juillet 2026",
     details: [
-      "Stage de 4 mois.",
-      "Chez Prestarocket, agence e-commerce PrestaShop et Shopify à Lille.",
-      "Développement d’applications et de modules pour Shopify et PrestaShop, avec utilisation d’une API GraphQL."
+      "Participation au développement et à la maintenance de solutions e-commerce pour PrestaShop et Shopify au sein de l’agence Prestarocket, spécialisée dans le commerce en ligne.",
+      "Développement de modules PrestaShop et d’outils Symfony facilitant la gestion de boutiques Shopify, en exploitant l’API GraphQL pour manipuler leurs données et automatiser certaines opérations.",
+      "Rédaction de la documentation technique d’un module PrestaShop inachevé afin de faciliter sa reprise par un autre développeur.",
+      "Découverte de Docker et approfondissement des compétences en PHP et en développement d’applications web."
     ],
+    mainDifficulty: "Travailler durant les 5 vagues de chaleur",
     technologies: ["Symfony", "PHP", "JavaScript", "Bootstrap", "GraphQL", "Shopify", "PrestaShop", "Docker", "Git"]
   },
   {
     title: "Stage BUT 3 — Elosi",
     date: "18 mars – 28 juin 2024",
     details: [
-      "Stage de 15 semaines.",
-      "Chez Elosi, une ESN à Villeneuve-d’Ascq.",
-      "Travail sur une application SIRH interne, utilisée par les RH, les managers et les collaborateurs afin de faciliter la gestion de carrière des collaborateurs.",
-      "Travail en équipe."
+      "Contribution à l’évolution et à la maintenance de Skillosi, application SIRH interne dédiée à la gestion de carrière des collaborateurs.",
+      "Intervention au sein d’une équipe sur le back-end Java avec Spring Boot, le front-end Vue.js et la base de données PostgreSQL.",
+      "Participation à la mise en place d’un historique des contrats ainsi qu’à l’évolution de la gestion des données et des droits d’accès.",
+      "Expérience sur une application existante et sur plusieurs couches, de la base de données à l’interface."
     ],
+    mainDifficulty: "Faire le rapport de stage en parralèle du travail",
     technologies: ["Spring", "Vue.js", "Java", "JavaScript", "HTML", "SQL", "DBeaver", "Git"]
   },
   {
     title: "Stage BUT 2 — Mairie de Montigny-en-Gohelle",
     date: "17 avril – 9 juin 2023",
     details: [
-      "Stage de 8 semaines.",
-      "À la mairie de Montigny-en-Gohelle.",
-      "Développement d’une application de gestion de courrier pour les services techniques et RH.",
-      "Travail autonome."
+      "Développement largement autonome d’une application web interne de gestion de courriers pour les services techniques et les ressources humaines.",
+      "Conception de la base de données et réalisation des fonctionnalités de gestion des courriers, de suivi, de pièces jointes et des droits d’accès.",
+      "Ajout de la génération de documents Word à partir de modèles et des données enregistrées.",
+      "Mise en pratique du développement d’une application web complète et renforcement de l’autonomie dans la conduite d’un projet."
     ],
+    mainDifficulty: "Savoir quoi faire, en raison du manque de communication",
     technologies: ["PHP", "JavaScript", "HTML", "SQL", "WampServer", "Git"]
   }
 ];

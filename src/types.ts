@@ -32,6 +32,7 @@ export interface Experience {
   title: string;
   date: string;
   details: string[];
+  mainDifficulty: string;
   technologies: string[];
   link?: {
     label: string;

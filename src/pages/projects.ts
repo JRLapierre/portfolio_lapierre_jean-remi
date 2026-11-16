@@ -1,9 +1,10 @@
 import { projects, internships, academicProjects, competitions, skills } from "../data/portfolio";
-import { bullets, skillTags, slugify } from "../utils/html";
+import { bullets, escapeHtml, skillTags, slugify } from "../utils/html";
 import type { Project } from "../types";
 
 type ProjectCardData = Pick<Project, "title" | "date" | "technologies" | "link"> & {
   description: string[];
+  mainDifficulty?: string;
 };
 
 function renderProjectCards(items: ProjectCardData[]): string {
@@ -14,6 +15,9 @@ function renderProjectCards(items: ProjectCardData[]): string {
           <div class="project-content">
             <div class="timeline-title"><h3>${project.title}</h3><span>${project.date}</span></div>
             ${bullets(project.description)}
+            ${project.mainDifficulty
+              ? `<section class="project-difficulty"><h4>Difficulté principale</h4><p>${escapeHtml(project.mainDifficulty)}</p></section>`
+              : ""}
             ${skillTags(project.technologies, skills)}
             ${project.link ? `<a class="text-link" href="${project.link.url}" target="_blank" rel="noreferrer">Consulter le dépôt GitHub ↗</a>` : ""}
           </div>
@@ -28,6 +32,7 @@ export function renderProjects(): string {
     title: internship.title,
     date: internship.date,
     description: internship.details,
+    mainDifficulty: internship.mainDifficulty,
     technologies: internship.technologies
   }));
 
@@ -42,16 +47,16 @@ export function renderProjects(): string {
       ${renderProjectCards(projects)}
     </section>
     <section class="section-block">
+      <h2>Réalisations en stage</h2>
+      ${renderProjectCards(internshipProjects)}
+    </section>
+    <section class="section-block">
       <h2>Projets académiques</h2>
       ${renderProjectCards(academicProjects)}
     </section>
     <section class="section-block">
       <h2>Compétitions</h2>
       ${renderProjectCards(competitions)}
-    </section>
-    <section class="section-block">
-      <h2>Réalisations en stage</h2>
-      ${renderProjectCards(internshipProjects)}
     </section>
   `;
 }

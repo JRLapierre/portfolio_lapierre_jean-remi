@@ -23,4 +23,3 @@ Adaptation du cv à l'aide de chatgpt.
 
 - Ajouter les softskills
 - Ajouter des détails sur les loisirs et ma personnalité
-- Donner plus de détails au contenu des stages
