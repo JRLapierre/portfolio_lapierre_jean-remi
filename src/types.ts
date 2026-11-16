@@ -60,5 +60,6 @@ export interface Course {
 
 export interface CourseProject {
   title: string;
+  description?: string;
   academicProjectTitle?: string;
 }

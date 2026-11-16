@@ -254,9 +254,9 @@ export const education = [
     detail: ""
   },
   {
-    title: "BUT informatique",
+    title: "BUT informatique Parcours développement d’applications",
     date: "2021 – 2024",
-    detail: "Parcours développement d’applications"
+    detail: "Le BUT Informatique forme en trois ans les informaticiens qui participent à la conception, la réalisation et la mise en œuvre de solutions informatiques répondant aux besoins de transformation numérique des organisations."
   }
 ];
 
@@ -344,10 +344,29 @@ export const courses: Course[] = [
     semester: "S1",
     date: "Septembre – Décembre 2021",
     projects: [
-      { title: "Exercice de programmation sans fiche associée" },
       {
-        title: "Projet test — Gestion de bibliothèque",
-        academicProjectTitle: "Projet test — Gestion de bibliothèque"
+        title: "SAÉ 1.01 — Jeu des multiples et diviseurs",
+        description: "Développement en Python d’un jeu à deux joueurs où chaque coup est choisi parmi les multiples ou diviseurs du nombre précédent."
+      },
+      {
+        title: "SAÉ 1.02 — Comparaison d’algorithmes de tri",
+        description: "Implémentation de tris par insertion, sélection, bulles, fusion et rapide, puis comparaison de leurs temps d’exécution."
+      },
+      {
+        title: "SAÉ 1.03 — Installation d’un poste de développement",
+        description: "Installation et configuration d’un environnement Linux pour le développement, avec automatisation de certaines opérations par scripts."
+      },
+      {
+        title: "SAÉ 1.04 — Base de données des marchés publics",
+        description: "Conception d’un schéma relationnel PostgreSQL pour gérer les marchés, les entités d’achat, les attributaires et les tranches budgétaires."
+      },
+      {
+        title: "SAÉ 1.05 — Recueil des besoins d’un événement",
+        description: "Définition d’un concept d’entreprise événementielle, analyse de ses clients et création d’un site statique présentant ses prestations."
+      },
+      {
+        title: "SAÉ 1.06 — Étude du positionnement de l’entreprise",
+        description: "Étude de la concurrence et de l’impact écologique du site, puis synthèse des résultats et présentation du projet."
       }
     ],
     technologies: ["Java", "Python", "HTML", "CSS", "SQL", "Bash"]
@@ -356,72 +375,146 @@ export const courses: Course[] = [
     title: "BUT informatique",
     semester: "S2",
     date: "Janvier – Juin 2022",
-    projects: [{ title: "TODO" }],
+    projects: [
+      {
+        title: "SAÉ 2.01–2.02 — Gestion des ventes",
+        description: "Développement en Java d’une application de gestion des articles, des stocks, des clients et des commandes."
+      },
+      {
+        title: "SAÉ 2.03 — Configuration d’un réseau",
+        description: "Configuration de l’adressage IPv4/IPv6 et du routage entre plusieurs entreprises et réseaux distants."
+      },
+      {
+        title: "SAÉ 2.04 — Conception d’une base de données",
+        description: "Modélisation et mise en œuvre d’une base relationnelle, avec création des tables et requêtes SQL à partir d’un jeu de données."
+      },
+      {
+        title: "SAÉ 2.05–2.06 — Projet d’entreprise et gestion de projet",
+        description: "Analyse d’une entreprise et de son marché, cadrage du projet, répartition des tâches, définition des jalons et suivi du planning."
+      }
+    ],
     technologies: ["Java", "Python", "HTML", "CSS", "JavaScript", "SQL", "Bash", "Git"]
   },
   {
     title: "BUT informatique",
     semester: "S3",
     date: "Septembre – Décembre 2022",
-    projects: [{ title: "TODO" }],
+    projects: [{
+      title: "SAÉ 3.A.01 — Autour des fractales",
+      description: "Conception en Java d’une application générant des fractales, dont Mandelbrot et Julia, à partir de suites complexes et de transformations géométriques."
+    }],
     technologies: ["Java", "Python", "PHP", "Laravel", "HTML", "CSS", "JavaScript", "SQL", "Bash", "Git"]
   },
   {
     title: "BUT informatique",
     semester: "S4",
     date: "Janvier – Avril 2023",
-    projects: [{ title: "TODO" }],
-    technologies: ["Java", "Python", "HTML", "Kotlin", "XML", "Git", "Apache Spark", "Neo4j", "Cassandra", "MongoDB"]
+    projects: [{
+      title: "Défis algorithmiques des 24 h des IUT",
+      description: "Développement en Java de solutions pour plusieurs jeux et problèmes algorithmiques, notamment le jeu de Nim, la recherche dans un graphe et la sélection d’objets sous contrainte."
+    },
+    {
+      title: "Marathon du web",
+      description: "Développement d'un site web en 24h (nuit incluse) en collaboration avec une équipe de MMI",
+      academicProjectTitle: "Marathon du web"
+    }],
+    technologies: ["Java", "Python", "PHP", "Laravel", "HTML", "Kotlin", "XML", "Git", "Apache Spark", "Neo4j", "Cassandra", "MongoDB"]
   },
   {
     title: "BUT informatique",
     semester: "S5",
     date: "Septembre – Décembre 2023",
-    projects: [{ title: "TODO" }],
+    projects: [{
+      title: "Plateforme de mise en relation pour le covoiturage",
+      academicProjectTitle: "SAÉ 5.01 — Plateforme de covoiturage"
+    }],
     technologies: ["Java", "Python", "JavaScript", "TypeScript", "HTML", "CSS", "SQL", "MongoDB", "React", "Next.js", "Spring", "Git"]
   },
   {
     title: "BUT informatique",
     semester: "S6",
     date: "Janvier – Mars 2024",
-    projects: [{ title: "TODO" }],
+    projects: [{
+      title: "Gestionnaire de planning et de temps de projet",
+      description: "Développement d’une application web pour organiser les projets, tâches et équipes, planifier le travail et suivre le temps passé."
+    }],
     technologies: ["PHP", "Java", "Python", "JavaScript", "TypeScript", "HTML", "CSS", "React", "Next.js", "Symfony", "Git"]
   },
   {
     title: "L3 informatique",
     semester: "S1",
     date: "Septembre – Décembre 2025",
-    projects: [{ title: "TODO" }],
+    projects: [
+      {
+        title: "SAÉ — Gestion d’une bibliothèque en shell",
+        description: "Création en Bash d’un outil de gestion de bibliothèque à partir de fichiers texte, avec suivi des emprunts et retours, statistiques et sauvegardes."
+      },
+      {
+        title: "Space Invaders",
+        academicProjectTitle: "Space Invaders — Jeu en C"
+      }
+    ],
     technologies: ["C", "SDL3", "PHP", "HTML", "CSS", "JavaScript", "Bash", "Flex", "Git"]
   },
   {
     title: "L3 informatique",
     semester: "S2",
     date: "Janvier – Mars 2026",
-    projects: [{ title: "TODO" }],
+    projects: [{
+      title: "Projet URNE — Méthodes de scrutin en Rust",
+      description: "Développement d’un programme Rust qui lit des scrutins depuis des fichiers et calcule les résultats selon dix méthodes, dont la Pluralité, TRS, IRV, Borda, Bucklin, Baldwin, Copeland, Schulze et leurs variantes."
+    }],
     technologies: ["Java", "Python", "Haskell", "PHP", "HTML", "CSS", "JavaScript", "SQL", "Rust", "C", "Assembleur", "Git"]
   },
   {
     title: "M1 informatique",
     semester: "S1",
     date: "Septembre – Décembre 2026",
-    projects: [{ title: "TODO" }],
+    projects: [
+      {
+        title: "SAÉ Système et réseaux — Client-serveur SSH",
+        description: "Projet en cours : les consignes demandent de concevoir un client et un serveur pour ouvrir une session distante, authentifier un utilisateur et transmettre commandes, entrées/sorties et signaux. Le chiffrement est un bonus."
+      },
+      {
+        title: "ArtoisNet — Réseau virtuel superposé",
+        description: "Projet réseau en cours, basé sur les consignes : concevoir des nœuds autonomes communiquant par UDP, avec adressage logique, routage via des relais et transfert fiable de fichiers avec contrôle d’intégrité."
+      }
+    ],
     technologies: ["Python", "Java", "C", "Git"]
   }
 ];
 
 export const academicProjects: Project[] = [
-  { title: "Projet académique 1", date: "TODO", description: ["TODO"], technologies: ["TODO"] },
-  { title: "Projet académique 2", date: "TODO", description: ["TODO"], technologies: ["TODO"] },
-  { title: "Projet académique 3", date: "TODO", description: ["TODO"], technologies: ["TODO"] },
   {
-    title: "Projet test — Gestion de bibliothèque",
-    date: "BUT informatique — S1",
+    title: "SAÉ 5.01 — Plateforme de covoiturage",
+    date: "BUT informatique — S5",
     description: [
-      "Application fictive de gestion d'un catalogue et des emprunts.",
-      "Projet de démonstration pour tester le lien depuis la formation."
+      "Conception d’une application web qui met en relation des personnes pour le covoiturage et recommande des groupes selon les trajets, horaires, budgets et préférences.",
+      "Développement d’une interface React, d’API Spring et Flask, d’un moteur de recommandation et d’un chat de groupe, avec persistance des données dans MongoDB."
     ],
-    technologies: ["Python"]
+    technologies: ["Java", "Spring", "React", "Python", "Flask", "MongoDB", "Docker", "Git"]
+  },
+  {
+    title: "Marathon du web",
+    date: "BUT informatique — S4",
+    description: [
+      "Développement d'un site web en 24h (nuit incluse) en collaboration avec une équipe de MMI",
+      "Le travail des élèves infos consistait à développer le back en laravel et de gérer l'hébergement gitlab pendant que les MMI faisait le front."
+    ],
+    technologies: ["PHP", "Laravel", "Git"]
+  },
+  {
+    title: "Space Invaders — Jeu en C",
+    date: "Licence 3 informatique — S1",
+    description: [
+      "Réalisation d’un jeu d’arcade en C structuré selon le modèle MVC, séparant la logique du jeu, les contrôles et l’affichage.",
+      "Deux modes d’affichage sont proposés : terminal avec ncurses et interface graphique avec SDL3. Le jeu gère notamment le vaisseau, les aliens, les tirs, les boucliers et les collisions."
+    ],
+    technologies: ["C", "SDL3", "ncurses", "Make", "Git"],
+    link: {
+      label: "github.com/JRLapierre/space-invader",
+      url: "https://github.com/JRLapierre/space-invader"
+    }
   }
 ];
 

@@ -8,6 +8,7 @@ export function renderHome(): string {
         <h1>Bonjour, je suis <span>${profile.name}</span>.</h1>
         <p class="hero-role">${profile.role}</p>
         <p class="lead">J'ai créé ce portfolio pour mettre tout ce que je ne pouvais pas mettre dans le CV, et parler de moi en détails.</p>
+        <p class="lead">J'ai donc vibe-codé ce projet (une première pour moi) afin de gagner du temps</p>
         <div class="hero-actions">
           <a class="button button-primary" href="/projects" data-link>Voir mes projets</a>
           <a class="button button-secondary" href="https://jrlapierre.github.io/CV/" target="_blank">Consulter mon CV</a>

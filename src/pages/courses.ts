@@ -16,6 +16,9 @@ function renderCourseProjects(courseProjects: CourseProject[]): string {
             ${academicProject
               ? `<a href="/projects#${slugify(academicProject.title)}" data-link>${escapeHtml(label)}</a>`
               : escapeHtml(label)}
+            ${courseProject.description
+              ? `<p class="course-project-description">${escapeHtml(courseProject.description)}</p>`
+              : ""}
           </li>
         `;
       }).join("")}
