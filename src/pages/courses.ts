@@ -27,13 +27,13 @@ function renderCourseProjects(courseProjects: CourseProject[]): string {
 }
 
 const educationTitleByCourseTitle: Record<string, string> = {
-  "BUT informatique": "BUT informatique",
+  "BUT informatique": "BUT informatique Parcours développement d’applications",
   "L3 informatique": "Licence 3 informatique",
   "M1 informatique": "Master 1 informatique"
 };
 
 export function renderCourses(): string {
-  const courseTitles = [...new Set(courses.map(course => course.title))];
+  const courseTitles = [...new Set(courses.map(course => course.title))].reverse();
 
   return `
     <div class="page-intro">
@@ -45,7 +45,9 @@ export function renderCourses(): string {
       const degree = education.find(
         item => item.title === educationTitleByCourseTitle[courseTitle]
       );
-      const semesterCourses = courses.filter(course => course.title === courseTitle);
+      const semesterCourses = courses
+        .filter(course => course.title === courseTitle)
+        .reverse();
 
       return `
         <section class="section-block">
@@ -53,6 +55,10 @@ export function renderCourses(): string {
             <div>
               <h2>${courseTitle}</h2>
               ${degree ? `<p class="card-date">${degree.date}</p>` : ""}
+              ${degree?.detail ? `<p class="education-detail">${escapeHtml(degree.detail)}</p>` : ""}
+              ${degree?.url
+                ? `<p class="education-link">Pour plus d’informations, <a class="text-link" href="${escapeHtml(degree.url)}" target="_blank" rel="noreferrer">consultez le site de la formation</a>.</p>`
+                : ""}
             </div>
           </div>
           <div class="project-list">

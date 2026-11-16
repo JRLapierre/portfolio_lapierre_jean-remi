@@ -21,8 +21,6 @@ Adaptation du cv à l'aide de chatgpt.
 
 ## TODO
 
-- Compléter la description de chaque semestre, et ajouter les compétences correspondantes
 - Ajouter les softskills
-- Compléter les projets scolaires conséquents
 - Ajouter des détails sur les loisirs et ma personnalité
 - Donner plus de détails au contenu des stages

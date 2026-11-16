@@ -246,17 +246,20 @@ export const education = [
   {
     title: "Master 1 informatique",
     date: "2026 – Aujourd’hui",
-    detail: ""
+    detail: "Approfondissement des compétences en informatique à travers des enseignements spécialisés et des projets.",
+    url: "https://www.cril.univ-artois.fr/masterinfo/"
   },
   {
     title: "Licence 3 informatique",
     date: "2025 – 2026",
-    detail: ""
+    detail: "Troisième année de licence permettant de consolider les fondamentaux de l’informatique et de les mobiliser dans des projets.",
+    url: "https://www.sciences.univ-artois.fr/licence-informatique"
   },
   {
     title: "BUT informatique Parcours développement d’applications",
     date: "2021 – 2024",
-    detail: "Le BUT Informatique forme en trois ans les informaticiens qui participent à la conception, la réalisation et la mise en œuvre de solutions informatiques répondant aux besoins de transformation numérique des organisations."
+    detail: "Le BUT Informatique forme en trois ans les informaticiens qui participent à la conception, la réalisation et la mise en œuvre de solutions informatiques répondant aux besoins de transformation numérique des organisations.",
+    url: "https://www.iut-lens.univ-artois.fr/formations/but-informatique/"
   }
 ];
 
@@ -486,6 +489,19 @@ export const courses: Course[] = [
 
 export const academicProjects: Project[] = [
   {
+    title: "Space Invaders — Jeu en C",
+    date: "Licence 3 informatique — S1",
+    description: [
+      "Réalisation d’un jeu d’arcade en C structuré selon le modèle MVC, séparant la logique du jeu, les contrôles et l’affichage.",
+      "Deux modes d’affichage sont proposés : terminal avec ncurses et interface graphique avec SDL3. Le jeu gère notamment le vaisseau, les aliens, les tirs, les boucliers et les collisions."
+    ],
+    technologies: ["C", "SDL3", "ncurses", "Make", "Git"],
+    link: {
+      label: "github.com/JRLapierre/space-invader",
+      url: "https://github.com/JRLapierre/space-invader"
+    }
+  },
+  {
     title: "SAÉ 5.01 — Plateforme de covoiturage",
     date: "BUT informatique — S5",
     description: [
@@ -502,19 +518,6 @@ export const academicProjects: Project[] = [
       "Le travail des élèves infos consistait à développer le back en laravel et de gérer l'hébergement gitlab pendant que les MMI faisait le front."
     ],
     technologies: ["PHP", "Laravel", "Git"]
-  },
-  {
-    title: "Space Invaders — Jeu en C",
-    date: "Licence 3 informatique — S1",
-    description: [
-      "Réalisation d’un jeu d’arcade en C structuré selon le modèle MVC, séparant la logique du jeu, les contrôles et l’affichage.",
-      "Deux modes d’affichage sont proposés : terminal avec ncurses et interface graphique avec SDL3. Le jeu gère notamment le vaisseau, les aliens, les tirs, les boucliers et les collisions."
-    ],
-    technologies: ["C", "SDL3", "ncurses", "Make", "Git"],
-    link: {
-      label: "github.com/JRLapierre/space-invader",
-      url: "https://github.com/JRLapierre/space-invader"
-    }
   }
 ];
 
