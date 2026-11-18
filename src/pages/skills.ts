@@ -29,8 +29,6 @@ export function renderSkillsPage(): string {
       <h2>Compétences humaines</h2>
 
       ${tags(softSkills)}
-
-      <a class="text-link" href="/hobbies" data-link>Découvrir mes loisirs</a>
     </section>
   `;
 }

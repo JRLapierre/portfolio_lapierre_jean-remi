@@ -24,7 +24,7 @@ export function renderHobbies(): string {
     <div class="page-intro">
       <p class="eyebrow">EN DEHORS DE L’INFORMATIQUE</p>
       <h1>Loisirs</h1>
-      <p class="lead">Quelques centres d’intérêt à découvrir. Ouvre un loisir pour afficher son contenu.</p>
+      <p class="lead">Je vais vous présenter mes loisirs principaux, ceux qui reviennent souvent. Parfois je n'y touche pas pendant des mois, parfois je dédie tout mon temps libre à un de ces loisirs.</p>
     </div>
     <section class="hobby-grid" aria-label="Liste des loisirs">
       ${hobbyItems.map(hobby => `

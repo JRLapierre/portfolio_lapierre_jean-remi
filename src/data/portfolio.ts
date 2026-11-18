@@ -211,75 +211,86 @@ export const hobbyItems: HobbyItem[] = [
     label: "Vélo",
     icon: "/images/icons/hobbies/bike.png",
     content: [
-      { type: "text", text: "Exemple à remplacer : présente ici tes sorties, itinéraires ou souvenirs à vélo." },
-      { type: "link", label: "Lien de démonstration", url: "https://example.com" },
-      {
-        type: "image",
-        src: "/images/icons/hobbies/bike.png",
-        alt: "Illustration de démonstration pour le vélo",
-        caption: "Image de démonstration à remplacer."
-      }
+      { type: "text", text: "J'aime le vélo. C'est un moyen de transport pratique." },
+      { type: "text", text: "J'ai l'habitude de faire la majorité de mes trajets entre ma maison et la fac (13km) à vélo, tant qu'il ne pleut pas. C'est aussi rapide que le bus, et plus fiable que le train, et ça me donne de la souplesse dans mes horraires. Lors de mes stages dans la zone lilloise, je faisais parfois mes retours en vélo. C'est du bon sport, mais j'ai pas encore le niveau de le faire tous les jours." },
+      { type: "text", text: "Mon record de vitesse est de 50 km/h sur terrain plat, et mon record de distance est d'environ 90 km sans descendre du vélo plus de 5 minutes. J'ai comme objectif d'atteindre les 100 km, afin de battre le record de mon frère." },
     ]
   },
   {
     label: "Marche",
     icon: "/images/icons/hobbies/walk.png",
     content: [
-      { type: "text", text: "Exemple à remplacer : raconte ici les promenades ou les paysages que tu apprécies." }
+      { type: "text", text: "Je suis bon marcheur. Dans les périodes particulièrement stressantes (quand je recherche du travail par exemple), je vais souvent marcher entre 5 et 10 km dans des zones peu fréquentées pour me détendre." }
     ]
   },
   {
     label: "Musique",
     icon: "/images/icons/hobbies/music.png",
     content: [
-      { type: "text", text: "Exemple à remplacer : parle ici des styles musicaux, artistes ou instruments qui t’intéressent." },
-      { type: "link", label: "Lien de démonstration", url: "https://example.com" }
+      { type: "text", text: "Je ne suis pas musicien, mais j'aime la musique complexe. Je cherche toujours de la nouveauté, donc je ne m'arrête pas à une liste prédéfinie de genres." },
+      { type: "text", text: "Si vous voulez, vous pouvez consulter la playlist répertoriant plus de 2000 musiques que j'ai trouvé à mon goût." },
+      { type: "link", label: "Ma playlist principale", url: "https://youtube.com/playlist?list=PLurdA46opV2SFZOUCVcov5xBxSTbAGaDO&si=G89UIvmiajkus_Co" }
     ]
   },
   {
     label: "Lecture",
     icon: "/images/icons/hobbies/reading.png",
     content: [
-      { type: "text", text: "Exemple à remplacer : présente ici tes lectures ou les genres que tu préfères." },
-      {
-        type: "image",
-        src: "/images/icons/hobbies/reading.png",
-        alt: "Illustration de démonstration pour la lecture"
-      }
+      { type: "text", text: "Lire est mon passe-temps principal. Comme je vais à mon rythme, je peux lire quand je suis en pleine forme comme quand je suis complètement épuisé." },
+      { type: "text", text: "Je n'achète pas de livres, il y a suffisamment de contenu interessant gratuit sur internet." },
+      { type: "text", text: "Mes thèmes favoris sont la survie, l'aventure et les émotions : j'aime particulièrement quand les personnages doivent faire des choix difficiles, ou qu'ils se remettent en question. Je lis aussi d'autres choses, car j'essaie d'élargir mon horizon" },
+      { type: "text", text: "Si une lecture m'intéresse, je suis capable de lire l'équivalent de la Bible en une semaine." },
     ]
   },
   {
     label: "Écriture",
     icon: "/images/icons/hobbies/writing.png",
     content: [
-      { type: "text", text: "Exemple à remplacer : décris ici les textes ou projets d’écriture que tu aimes réaliser." }
+      { type: "text", text: "Quand je ne trouve pas les histoires que j'aimerais lire, ma réponse est parfois \"Je vais les écrire moi-même\"." },
+      { type: "text", text: "J'ai quelques gros projets (aucun n'est proche d'être terminé), et plein de petites histoires. Parfois je décide de regrouper plusieurs petites histoires dans un gros projet." },
+      { type: "text", text: "Un de mes gros projet est sur le thème de survivre à l'apocalypse, un autre est sur le thème de prospérer à partir de presque rien, et le plus ancien est sur le thème de traverser une révolution." },
+      { type: "text", text: "Ces thèmes sont en rapport avec le futur que je vois venir : une crise majeure destructrice, puis la construction d'un monde plus sain." },
+      { type: "text", text: "Les périodes durant lesquelles j'écris le plus sont mes périodes de stage, avec de longs trajets en train sans connexion à internet pour me distraire." },
     ]
   },
   {
     label: "Sciences",
     icon: "/images/icons/hobbies/sciences.png",
     content: [
-      { type: "text", text: "Exemple à remplacer : partage ici les sujets scientifiques qui éveillent ta curiosité." },
-      { type: "link", label: "Lien de démonstration", url: "https://example.com" },
-      {
-        type: "image",
-        src: "/images/icons/hobbies/sciences.png",
-        alt: "Illustration de démonstration pour les sciences"
-      }
+      { type: "text", text: "Je m'intéresse à de multiples sciences, en particulier celles qui donnent des réponses à la question : \"Comment en est-on arrivé là ?\". Parmi ces sciences figurent : la psychologie, la sociologie, la biologie, l'histoire, l'archéologie et la paléontologie." },
+      { type: "text", text: "Mes sources d'information principales sont de multiples chaines youtube que je regarde avec scepticisme pendant les premiers mois, avant de décider si je peux leur faire confiance" },
+      { type: "text", text: "J'ai aussi un intérêt particulier envers les \"simulation de vie artificielles\" : des organismes avec des paramètres sont simulés, ceux qui survivent se reproduisent, et à chaque génération, des petites mutations des paramètres ont lieu. Un des exemples les plus connus est \"The bibites\"." },
     ]
   },
   {
     label: "Minecraft",
     icon: "/images/icons/hobbies/minecraft.png",
     content: [
-      { type: "text", text: "Exemple à remplacer : présente ici tes constructions, modes de jeu ou projets Minecraft." },
+      { type: "text", text: "Minecraft est mon jeu principal, à l'exception peut-être du sudoku et du démineur." },
+      { type: "text", text: "Je joue solo, en restant attaché à un monde survie. Mon activité favorite est de rénover l'intérieur de ma base." },
+      { type: "text", text: "Avec le temps, mon goût pour le beau s'est développé. J'essaie de créer un environnement dans lequel je me sens bien." },
+      { type: "text", text: "Voici la deuxième entrée de ma base, faite cette année. Je me suis inspiré des maisons de hobbit, puis j'ai créé progressivement un jardin. Cette image me sert actuellement de fond d'écran." },
       {
         type: "image",
-        src: "/images/icons/hobbies/minecraft.png",
-        alt: "Illustration de démonstration pour Minecraft",
-        caption: "Image de démonstration à remplacer."
+        src: "images/hobbies/2026-10-22_10.01.25.png",
+        alt: "Entrée du hobbit",
+        caption: "Entrée du hobbit."
       },
-      { type: "link", label: "Lien de démonstration", url: "https://example.com" }
+      { type: "text", text: "Voici mon plus gros projet individuel, fait entre octobre 2025 et mars 2026. Je voulais faire une structure qui soit massive sans être oppressante pour héberger les centaines de cartes de mon monde." },
+      {
+        type: "image",
+        src: "/images/hobbies/2026-03-18_18.03.42.png",
+        alt: "Cathédrale de glace",
+        caption: "Cathédrale de glace"
+      },
+    ]
+  },
+  {
+    label: "Programmation",
+    icon: "/images/icons/hobbies/programming.png",
+    content: [
+      { type: "text", text: "Quand je programme, mon activité favorite est le refactoring : j'aime améliorer du code, faire plus avec moins." },
+      { type: "text", text: "J'adhère à la philosophie de : \"La perfection, c'est quand il n'y a rien à enlever.\"" },
     ]
   },
 ];

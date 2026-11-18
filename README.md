@@ -26,7 +26,6 @@ Adaptation du cv à l'aide de chatgpt.
 
 - Trouver un icon pour le portfolio
 - Ajouter les softskills
-- Ajouter des détails sur les loisirs et ma personnalité
 
 - Que faire pour l'église ?  
 Je m'occupe des taches suivantes relatives à l'ordinateur : 
