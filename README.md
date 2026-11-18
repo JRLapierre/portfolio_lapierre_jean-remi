@@ -32,3 +32,5 @@ Je m'occupe des taches suivantes relatives à l'ordinateur :
 - Vidéoprojeter les paroles des chants, versets bibliques, vidéos, et autres contenus occasionnels
 - Enregistrer la prédication, et la publier sur le site de l'église eehb.fr
 - M'assurer que le culte soit bien rediffusé sur Zoom, afin de permettre à ceux qui ne peuvent pas venir d'assister au culte
+
+- Mettre une section "Mes projets pour le futur" ?

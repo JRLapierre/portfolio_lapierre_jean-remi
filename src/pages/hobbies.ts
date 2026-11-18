@@ -22,7 +22,7 @@ function renderHobbyContent(block: HobbyContentBlock): string {
 export function renderHobbies(): string {
   return `
     <div class="page-intro">
-      <p class="eyebrow">EN DEHORS DE L’INFORMATIQUE</p>
+      <p class="eyebrow">EN DEHORS DE L'ÉCOLE</p>
       <h1>Loisirs</h1>
       <p class="lead">Je vais vous présenter mes loisirs principaux, ceux qui reviennent souvent. Parfois je n'y touche pas pendant des mois, parfois je dédie tout mon temps libre à un de ces loisirs.</p>
     </div>
